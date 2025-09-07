@@ -1,0 +1,19 @@
+# Python / venv
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# pytest
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Secrets (IMPORTANT)
+secrets/
+*.json
+
+# Outputs
+out/
+!out/.gitkeep

@@ -1,0 +1,11 @@
+pandas>=2.1
+openpyxl>=3.1
+xlrd==1.2.0
+gspread>=6.0
+google-auth>=2.28
+pydrive2>=1.19
+typing-extensions>=4.9
+pyyaml>=6.0
+
+[dev]
+pytest>=7.4

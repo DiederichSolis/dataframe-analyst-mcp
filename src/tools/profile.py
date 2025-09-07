@@ -18,15 +18,16 @@ def profile(df: pd.DataFrame, columns: Iterable[str] | None = None, percentiles:
         desc = s.describe(percentiles=percentiles)
         # unify key names
         out = {
-            "count": int(desc.get("count", 0)),
-            "mean": _num(desc.get("mean")),
-            "std": _num(desc.get("std")),
-            "min": _num(desc.get("min")),
-            "max": _num(desc.get("max")),
-        }
+        "count": int(desc.get("count", 0)),
+        "mean": _num(desc.get("mean")),
+        "std": _num(desc.get("std")),
+        "min": _num(desc.get("min")),
+        "max": _num(desc.get("max")),
+    }
         for p in percentiles:
+            label = f"{int(p*100)}%"  # pandas usa '25%'/'50%'/'75%'
             key = f"p{int(p*100)}"
-            out[key] = _num(desc.get(p))
+            out[key] = _num(desc.get(label))
         stats[str(c)] = out
     return {"stats": stats}
 
