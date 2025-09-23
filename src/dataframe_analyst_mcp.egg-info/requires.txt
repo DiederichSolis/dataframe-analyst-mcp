@@ -1,0 +1,11 @@
+mcp>=1.14.0
+pandas>=2.2
+openpyxl>=3.1
+xlrd==1.2.0
+pydantic>=2.6
+
+[gdrive]
+gspread>=6
+google-auth>=2.28
+google-auth-oauthlib>=1.2
+pydrive2>=1.19
