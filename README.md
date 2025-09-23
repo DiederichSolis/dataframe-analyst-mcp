@@ -196,7 +196,3 @@ README.md
 - **`xlrd` y archivos `.xls`**: solo es compatible `xlrd==1.2.0`. Para `.xlsx` usa `openpyxl`.
 - **Correlación con 0s**: las columnas no numéricas se muestran como 0; limita a numéricas si lo deseas en tu reporte.
 
----
-
-## Licencia
-MIT (ajusta si prefieres otra).
